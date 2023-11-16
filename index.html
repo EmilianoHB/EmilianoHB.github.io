@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="imagen/png" href="recursos/dino.png">
+    <title>Porfolio</title>
+</head>
+
+<body>
+    <img class="fondo" src="recursos/fondo.jpg" alt="">
+    <main>
+        <section id="home">
+            <nav>
+                <a href="#home">
+                    <img src="recursos/iconoInicio.png" alt="Icono de home" width="70">
+                </a>
+                <a href="#SobreMi">
+                    <img src="recursos/iconoSobreMi.png" alt="Icono de aboutMe" width="70">
+                </a>
+                <a href="#proyectos">
+                    <img src="recursos/iconoPorfolio.png" alt="Icono de proyectos" width="70">
+                </a>
+                <a href="#skills">
+                    <img src="recursos/iconoSkills.png" alt="Icono de skills" width="70">
+                </a>
+                <a href="#education">
+                    <img src="recursos/iconoEstudios.png" alt="Icono de educaion" width="70">
+                </a>
+                <a href="#contactame">
+                    <img src="recursos/iconoContacto.png" alt="Icono de contactame" width="70">
+                </a>
+            </nav>
+            <header>
+                <h1>
+                    Hola, soy <span>Emiliano.</span> <br>Me dedico al Desarrollo de Software
+                </h1>
+            </header>
+            <ul class="redes-home">
+                <li>
+                    <a href="https://www.instagram.com/emilianoblanco/?next=%2F" target="_blank" rel="noreferrer">
+                        <img src="recursos/iconoInstagram.png" alt="Icono de instagram" width="50">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Emiliano_HB" target="_blank" rel="noreferrer">
+                        <img src="recursos/iconoTwitter.png" alt="Icono de twitter" width="50">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/emiliano-hernan-blanco-610234129/" target="_blank"
+                        rel="noreferrer">
+                        <img src="recursos/iconoLinkedin.png" alt="Icono de linkedin" width="50">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/EmilianoHB" target="_blank" rel="noreferrer">
+                        <img src="recursos/iconoGitHub.png" alt="Icono de github" width="50">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="SobreMi">
+            <article>
+                <h2>Sobre mí</h2>
+                <p>Soy Emiliano, un estudiante apasionado por<br> la programación con un amor por el mundo del
+                    desarrollo de software.<br> Este es mi espacio para compartir mis ideas, proyectos,<br> aprender y
+                    explorar este emocionante viaje. ¡Bienvenido a mi rincon digital de codigos y programas!</p>
+                <a href="recursos/curriculumEmiliano.jpg" download="recursos/curriculumEmiliano.jpg">
+                    <button>Curriculum</button>
+                </a>
+            </article>
+            <div>
+                <img src="recursos/emilianoAboutMe.jpg">
+            </div>
+        </section>
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="contenido">
+                <img src="recursos/dino.png" alt="Un pequeño Dinosaurio asombrado">
+                <p>Parece que no hay nada por aqui</p>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="imagenes-container">
+                <div class="fila1">
+                    <img src="recursos/Frontend.png" alt="Frontend">
+                    <img src="recursos/Backend.png" alt="Backend">
+                </div>
+                <div class="fila2">
+                    <img src="recursos/BasesDeDatos.png" alt="Bases de Datos">
+                    <img src="recursos/Herramientas.png" alt="Herramientas">
+                </div>
+            </div>
+        </section>
+        <section id="education" class="edu">
+            <h2>Educación</h2>
+            <h3>Titulo</h3>
+            <ul class="listas-edu">
+                <li>Tecnicaura en Programación e Innovacion tecnologica Digital</li>
+            </ul>
+            <h3>Cursos</h3>
+            <ul class="listas-edu">
+                <li>Fundamentos de Ingenieria de Software</li>
+                <li>Fundamentos de Aruietctura de Software</li>
+                <li>Profecional de Git y GitHub</li>
+                <li>Terminal y Linea de comandos</li>
+                <li>Desarrollo Backend</li>
+                <li>Programnacion en Go</li>
+                <li>Fundamentos de Python</li>
+                <li>Java SE</li>
+                <li>Java SE Orientado a Objetos</li>
+            </ul>
+        </section>
+        <section id="contactame">
+            <form action="https://formsubmit.co/emilianohblanco@gmail.com" method="POST">
+                <h2>Contactame</h2>
+                <p>Si queres contactarte conmigo,<br> lo podes hacer a travez de mis redes<br> o rellenando este
+                    formulario.<br> Te contestare lo antes posible!<br> Gracias por la visita!</p>
+                <div class="input-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="NombreS" id="name" placeholder="Ej: Emiliano">
+                    <label for="email">Correo</label>
+                    <input type="email" name="email" id="email" placeholder="Ej:pepito@gmail.com">
+                    <label for="subject">Asunto</label>
+                    <input type="text" name="subject" id="subject" placeholder="Ej: Solicitar reunion">
+                    <label for="coments">Comentarios</label>
+                    <textarea name="coments" id="coments" cols="30" rows="5" placeholder="Hola, soy..."></textarea>
+                    <input class="btn" type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

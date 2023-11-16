@@ -1,0 +1,316 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Esto es lo del fondo*/
+body {
+    position: relative;
+    margin: 0;
+}
+
+.fondo {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/*Esto es lo del nav*/
+nav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    flex-grow: 1;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5vw;
+}
+
+/*parte de cosas generales*/
+h2 {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Raleway;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+p {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Roboto;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+}
+
+ul {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Roboto;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+h3 {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Raleway;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/*Esto es la pagina de Inicio*/
+h1 {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Raleway;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-left: 10vw;
+    padding-top: 40vh;
+}
+
+h1 span {
+    color: #db7979;
+}
+
+#home ul {
+    display: flex;
+    margin-top: 1vh;
+    padding-left: 10vw;
+    gap: 3vw;
+    list-style: none;
+}
+
+#home {
+    margin-bottom: 40vh;
+}
+
+/*Esto es la pagina de SObre mi*/
+#SobreMi {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 30vh
+}
+
+#SobreMi article {
+    flex: 1;
+    max-width: 600px;
+    margin-right: 10px;
+}
+
+#SobreMi img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+#SobreMi button {
+    margin-top: 1vh;
+    font-family: Roboto;
+    width: 15rem;
+    height: 3.5rem;
+    font-weight: 700;
+    text-shadow: 8px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3.125rem;
+}
+
+@media screen and (max-width: 768px) {
+    #SobreMi {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #SobreMi article {
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+/*Aca empieza la parte de proyectos*/
+#proyectos {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 30vh;
+}
+
+#proyectos img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2vh;
+}
+
+#proyectos .contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    #proyectos {
+        text-align: center;
+    }
+
+    #proyectos .contenido {
+        flex-direction: column;
+    }
+}
+
+/*Aca empieza la parte de skills*/
+#skills {
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 30vh;
+}
+
+.imagenes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imagenes-container img {
+    max-width: 80%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width: 768px) {
+    #skills {
+        text-align: center;
+    }
+
+    .imagenes-container {
+        flex-direction: column;
+    }
+}
+
+/*Aca empieza la parte de educacion*/
+
+#education {
+    padding: 20px;
+    margin-bottom: 30vh;
+}
+
+#education h3 {
+    padding-left: 4rem;
+}
+
+.listas-edu {
+    padding-left: 8rem;
+    list-style: circle;
+}
+
+/*Aca empezamos con el formulario*/
+
+#contactame {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#contactame h2 {
+    color: #db7979;
+}
+
+form {
+    padding: 50px 55px;
+    box-shadow: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+#contactame label {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#contactame input,
+textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #FFF;
+    border: 2px solid #db7979;
+    color: #db7979;
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #130202;
+}
+
+.form-txt {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.btn {
+    font-size: 16px;
+    color: #ec9a9a;
+    border: 0;
+    border-radius: 25px;
+    box-shadow: 0 0 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #contactame {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+}
