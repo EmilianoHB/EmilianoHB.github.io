@@ -8,16 +8,15 @@
 body {
     position: relative;
     margin: 0;
-    background-color: #000;
 }
-/*
+
 .fondo {
     position: absolute;
     object-fit: cover;
     width: 100%;
     height: 100%;
     z-index: -1;
-}*/
+}
 
 /*Esto es lo del nav*/
 nav {
